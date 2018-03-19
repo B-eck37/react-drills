@@ -12,13 +12,9 @@ constructor(){
 
   render() {
       let showFamily = this.state.listOfThings.map(element =>
-    <h2>{element}</h2>)
+    <h2 key={element}>{element}</h2>)
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-          </div>
           {showFamily}
         </div>
         );
