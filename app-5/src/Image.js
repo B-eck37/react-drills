@@ -4,7 +4,7 @@ export default function Image (props){
   
         
         return (
-            <img src={props.myImage} alt=""/>
+            <img src={props.myImage} alt="Beautiful beach overlooking the water and neighboring island"/>
         )
 
 }
