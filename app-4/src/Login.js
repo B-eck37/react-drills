@@ -32,10 +32,10 @@ this.handleLogin = this.handleLogin.bind(this);
 
   render() {
     return (
-      <div className="App">
-       <input onChange={event => this.handleUserChange(event.target.value)}></input>
-       <input onChange={event => this.handlePassChange(event.target.value)}></input>
-       <button onClick={this.handleLogin}>Login</button>
+      <div className="App" style={{backgroundColor: 'black', color: 'white', width: '35%', margin: '0 auto'}}>
+       Username: <input style={{backgroundColor: 'magenta', borderColor: 'magenta'}} onChange={event => this.handleUserChange(event.target.value)}></input><br/><br/>
+       Password: <input style={{backgroundColor: 'magenta', borderColor: 'magenta'}} onChange={event => this.handlePassChange(event.target.value)}></input><br/><br/>
+       <button style={{marginLeft: '60px'}} onClick={this.handleLogin}>Login</button>
       </div>
     );
   }
