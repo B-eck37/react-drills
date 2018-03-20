@@ -20,6 +20,8 @@ class App extends Component {
   }
 
   addTask(){
+    // let newList = [this.state.list.slice()];
+    // newList.push(this.state.userInput)
     this.setState({
       list: [...this.state.list, this.state.userInput],
       userInput: ""

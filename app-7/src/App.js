@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import List from './List';
 import NewTasks from './NewTasks'
+// import Todo from './Todo'
 
 class App extends Component {
   constructor (){
@@ -10,7 +11,7 @@ class App extends Component {
     this.state = {
         list: [],
     }
-    
+    this.addTask = this.addTask.bind(this)
   }
 
  
@@ -27,11 +28,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>To-Do List</h1>
-
-        <div>
-        <NewTasks add={this.addTask} />
+        
+        <NewTasks add={this.addTask}/>
         <List tasks={this.state.list}/>
-        </div>
       </div>
     );
   }
