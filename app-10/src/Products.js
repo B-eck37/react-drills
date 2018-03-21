@@ -24,8 +24,8 @@ class Products extends Component {
                 this.setState({
                     people: [...this.state.people, array[i]],
                 })
+                console.log(this.state.people)
             }
-            // console.log(this.state.people)
         })
     }
 

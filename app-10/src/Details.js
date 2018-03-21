@@ -38,6 +38,7 @@ class Details extends Component {
     }
 
     render() {
+        // const name = this.state.name;
         const {name, gender, height, hairColor, eyeColor} = this.state;
         return (
             <div>
